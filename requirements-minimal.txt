@@ -1,0 +1,24 @@
+# Minimal requirements for basic functionality
+# Use this if you have limited resources or want to test quickly
+
+# Core
+numpy>=1.21.0
+opencv-python>=4.5.0
+Pillow>=8.0.0
+
+# Web Framework
+streamlit>=1.28.0
+
+# Deep Learning (CPU only)
+torch>=2.0.0
+
+# Transformers (for text emotion)
+transformers>=4.30.0
+
+# Audio Processing
+librosa>=0.10.0
+soundfile>=0.12.0
+scipy>=1.10.0
+
+# Utilities
+tqdm>=4.65.0

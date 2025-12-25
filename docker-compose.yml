@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  emotionsense:
+    build: .
+    container_name: emotionsense
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./output:/app/output
+      - ./data:/app/data
+      - ./models:/app/models
+    environment:
+      - PYTHONUNBUFFERED=1
+      - USE_GPU=false
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: GPU-enabled version
+  emotionsense-gpu:
+    build: .
+    container_name: emotionsense-gpu
+    ports:
+      - "8502:8501"
+    volumes:
+      - ./output:/app/output
+      - ./data:/app/data
+      - ./models:/app/models
+    environment:
+      - PYTHONUNBUFFERED=1
+      - USE_GPU=true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    profiles:
+      - gpu
