@@ -2,14 +2,8 @@
 
 <div align="center">
 
-![EmotionSense Banner](https://via.placeholder.com/800x200.png?text=EmotionSense+-+AI+Emotion+to+Music)
 
 **Transform your emotions into personalized music using AI**
-
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
-[![React](https://img.shields.io/badge/React-18+-61DAFB.svg)](https://reactjs.org)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 </div>
 
