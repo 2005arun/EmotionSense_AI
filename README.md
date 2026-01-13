@@ -381,10 +381,6 @@ LOG_LEVEL=INFO
 4. Push to branch (`git push origin feature/amazing`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - [DeepFace](https://github.com/serengil/deepface) - Face emotion detection
@@ -395,8 +391,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-- **Email**: your.email@example.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **Email**: arunramamoorthi05@gmail.com
+- **GitHub**: [2005arun](https://github.com/2005arun)
 
 ---
 
